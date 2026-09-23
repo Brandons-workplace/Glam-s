@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glam's Beauty Salon</title>
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- LOGO & BRAND HEADER -->
+    <div class="brand-header">
+      <div class="logo-wrapper">
+        <img src="Glam's Pricelist/IMG_0326.jpeg" alt="Glam's Beauty Salon Logo" class="brand-logo-img">
+      </div>
+      <h1 class="brand-title">GLAM'S</h1>
+      <p class="brand-sub">BEAUTY SALON & ACADEMY</p>
+    </div>
+
+    <!-- STATUS BADGE -->
+    <div id="statusSalon" class="status-badge">Memeriksa status...</div>
+
+    <!-- LINK BUTTONS -->
+    <div class="links-wrapper">
+      <button id="openPricelistBtn" class="link-card">
+        <i class="fa-solid fa-list-check left-icon"></i>
+        <span class="link-text">Pricelist & Promo Treatments</span>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </button>
+
+      <!-- Google Maps Location 1 -->
+      <a href="https://maps.app.goo.gl/LgwbLBuXwLc7RXuC8?g_st=ac" target="_blank" rel="noopener noreferrer" class="link-card">
+        <i class="fa-solid fa-location-dot left-icon"></i>
+        <span class="link-text">Glam's cabang UNS (Google Maps)</span>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+
+      <!-- Google Maps Location 2 -->
+      <a href="https://maps.app.goo.gl/EgbPRysGwzfFtA4Z6?g_st=aw" target="_blank" rel="noopener noreferrer" class="link-card">
+        <i class="fa-solid fa-location-dot left-icon"></i>
+        <span class="link-text">Glam's cabang Soba (Google Maps)</span>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+
+      <!-- Instagram Link (@salonviralsolo) -->
+      <a href="https://www.instagram.com/salonviralsolo?stkn=MTU0emVhbjM1cHN5ZQ==" target="_blank" rel="noopener noreferrer" class="link-card">
+        <i class="fa-brands fa-instagram left-icon"></i>
+        <span class="link-text">Follow Instagram (@salonviralsolo)</span>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </a>
+    </div>
+
+    <!-- FORM RESERVASI -->
+    <div class="booking-box">
+      <h3><i class="fa-brands fa-whatsapp"></i> BOOK YOUR SLOT NOW!</h3>
+      <p class="slot-note">Slot terbatas setiap hari agar hasil tetap maksimal.</p>
+
+      <div class="form-group">
+        <label for="bookingDate">Rencana Tanggal Kedatangan (Opsional):</label>
+        <input type="date" id="bookingDate">
+      </div>
+
+      <button id="btnWhatsapp" class="btn-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Book via WhatsApp
+      </button>
+    </div>
+
+    <div class="footer-quote">
+      Look Expensive, Feel Confident, Be Unforgettable. ♡
+    </div>
+
+    <div class="footer">
+      © GLAM'S BEAUTY SALON
+    </div>
+  </div>
+
+  <!-- MODAL PRICELIST (SCROLL VERTIKAL) -->
+  <div id="pricelistModal" class="modal-overlay">
+    <div class="modal-content modal-scroll-content">
+      <span id="closePricelistBtn" class="close-btn">&times;</span>
+
+      <div class="modal-header">
+        <h3>Pricelist Glam's Beauty Salon</h3>
+        <p class="scroll-hint"><i class="fa-solid fa-arrow-down-short-wide"></i> Scroll ke bawah untuk melihat semua menu</p>
+      </div>
+
+      <!-- CONTAINER GAMBAR SCROLL VERTIKAL -->
+      <div class="pricelist-scroll-container">
+        <img src="Glam's Pricelist/IMG_3088.png" alt="Pricelist 1" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_3059.png" alt="Pricelist 2" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_3053.png" alt="Pricelist 3" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_3052.png" alt="Pricelist 4" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_3051.png" alt="Pricelist 5" class="pricelist-img">
+        <img src="Glam's Pricelist/25321930-f60c-4cd4-b241-7703aa34e877.jpeg" alt="Pricelist 6" class="pricelist-img">
+        <img src="Glam's Pricelist/94910c4e-6886-4f60-a5c5-562ec109d9ee.jpeg" alt="Pricelist 7" class="pricelist-img">
+        <img src="Glam's Pricelist/4c6d526a-7e9f-4ce5-a1a0-af6b2faa866a.jpeg" alt="Pricelist 8" class="pricelist-img">
+        <img src="Glam's Pricelist/48f4a2ba-af3e-45ba-a3d1-fe06ad1d7ad6.jpeg" alt="Pricelist 9" class="pricelist-img">
+        <img src="Glam's Pricelist/640c97a7-d852-4ed4-a3cb-f194ed668b1f.jpeg" alt="Pricelist 10" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_3089.png" alt="Pricelist 11" class="pricelist-img">
+        <img src="Glam's Pricelist/65d41f3f-1634-4254-b62e-fb973fe74487.jpeg" alt="Pricelist 12" class="pricelist-img">
+        <img src="Glam's Pricelist/0c9facea-3165-4a3e-8467-3db7fc6aedc7.jpeg" alt="Pricelist 13" class="pricelist-img">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

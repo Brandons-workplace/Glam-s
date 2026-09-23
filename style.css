@@ -1,0 +1,354 @@
+/* ==========================================
+   RESET & GLOBAL STYLES
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* Menggunakan gradasi dari abu-abu terang ke #898784 */
+  background-image: radial-gradient(circle at 50% 30%, #B5B3B0 0%, #898784 100%);
+  color: #1C1A17;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* BRAND LOGO & HEADINGS */
+.brand-header {
+  margin-bottom: 12px;
+}
+
+/* CONTAINER LOGO GAMBAR */
+.logo-wrapper {
+  width: 78px; 
+  height: 105px; 
+  border-radius: 50%;
+  border: 2px solid #C49A45;
+  outline: 1px solid #C49A45;
+  outline-offset: 3px;
+  margin: 0 auto 14px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(196, 154, 69, 0.15);
+  overflow: hidden;
+}
+
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.68);
+  transform-origin: center 38%;
+}
+
+.brand-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #F5D77F; /* Mengubah warna emas menjadi lebih terang dan menyala */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Bayangan gelap agar tulisan lebih kontras & menonjol */
+  line-height: 1;
+}
+
+.brand-sub {
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: #FFFFFF; /* Mengubah teks gelap menjadi putih bersih agar mudah dibaca */
+  margin-top: 6px;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* HERO SECTION */
+.hero-section {
+  margin-bottom: 18px;
+}
+
+.handwritten-tag {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.2rem;
+  color: #1C1A17;
+  font-weight: 400;
+  margin-bottom: -10px;
+}
+
+.main-heading {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #F5D77F; /* Mengubah warna emas judul utama menjadi terang */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+}
+
+.handwritten-tag,
+.tagline-script,
+.footer-quote {
+  font-family: 'Great Vibes', cursive;
+  color: #FFFFFF; /* Mengubah teks latin dari gelap menjadi putih terang */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* STATUS BADGE */
+.status-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+  background: #FFFFFF;
+  border: 1px solid #C49A45;
+  color: #C49A45;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* LINK BUTTONS */
+.links-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 18px;
+  background: #FFFFFF;
+  border: 1px solid #D8B257;
+  border-radius: 12px;
+  color: #1C1A17;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+
+.link-card:hover {
+  background: #FAF7F2;
+  border-color: #C49A45;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(196, 154, 69, 0.2);
+}
+
+.link-card i.left-icon {
+  font-size: 1.1rem;
+  color: #C49A45;
+  width: 24px;
+}
+
+.link-text {
+  flex: 1;
+  text-align: center;
+}
+
+.link-card i.arrow-icon {
+  font-size: 0.8rem;
+  color: #999999;
+}
+
+/* BOOKING BOX */
+.booking-box {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1.5px solid #C49A45;
+  border-radius: 16px;
+  padding: 20px 18px;
+  margin-top: 16px;
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.booking-box h3 {
+  font-family: 'Cinzel', serif;
+  color: #C49A45;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.slot-note {
+  font-size: 0.78rem;
+  color: #666;
+  margin-top: 2px;
+  margin-bottom: 14px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1C1A17;
+  text-transform: uppercase;
+}
+
+.form-group select, 
+.form-group input {
+  width: 100%;
+  padding: 11px;
+  border-radius: 8px;
+  border: 1px solid #D8B257;
+  background: #FAF9F6;
+  color: #1C1A17;
+  font-size: 0.85rem;
+  outline: none;
+  font-family: inherit;
+}
+
+.btn-whatsapp {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #D8B257 0%, #C49A45 100%);
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  margin-top: 14px;
+}
+
+.btn-whatsapp:hover {
+  background: linear-gradient(135deg, #C49A45 0%, #A88132 100%);
+  box-shadow: 0 4px 15px rgba(196, 154, 69, 0.3);
+}
+
+.footer-quote {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem;
+  color: #1C1A17;
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+
+.footer {
+  font-family: 'Cinzel', serif;
+  font-size: 0.68rem;
+  letter-spacing: 1.5px;
+  color: #777777;
+}
+
+/* ==========================================
+   MODAL PRICELIST (VERSI SCROLL VERTIKAL)
+   ========================================== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.modal-scroll-content {
+  width: 100%;
+  max-width: 440px;
+  max-height: 85vh;
+  background: #FAF8F5;
+  border: 1.5px solid #C49A45;
+  border-radius: 16px;
+  position: relative;
+  padding: 20px 16px 16px 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 1.8rem;
+  color: #666;
+  cursor: pointer;
+  z-index: 20;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: #1C1A17;
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal-header h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #C49A45;
+  letter-spacing: 1px;
+}
+
+.scroll-hint {
+  font-size: 0.75rem;
+  color: #777777;
+  margin-top: 4px;
+}
+
+/* AREA CONTAINER SCROLL VERTIKAL */
+.pricelist-scroll-container {
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 4px;
+}
+
+.pricelist-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
