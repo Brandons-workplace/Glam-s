@@ -35,8 +35,8 @@ body {
 
 /* CONTAINER LOGO GAMBAR */
 .logo-wrapper {
-  width: 78px; 
-  height: 105px; 
+  width: 108px; 
+  height: 120px; 
   border-radius: 50%;
   border: 2px solid #C49A45;
   outline: 1px solid #C49A45;
@@ -54,8 +54,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(1.68);
-  transform-origin: center 38%;
+  transform: scale(1.0);
+  transform-origin: center 30%;
 }
 
 .brand-title {

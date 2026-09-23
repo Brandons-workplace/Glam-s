@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       let message = "Halo Glam's Beauty Salon, saya ingin reservasi slot treatment.";
 
-      // Jika pengguna memilih tanggal, tambahkan ke pesan
       if (dateInput) {
         const formattedDate = new Date(dateInput).toLocaleDateString("id-ID", {
           weekday: "long",
@@ -43,39 +42,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
       message += "\n\nApakah slot masih tersedia? Terima kasih!";
 
-      // Mengarahkan ke nomor 6285725133614 beserta teks pesan
       const waUrl = `https://wa.me/6285725133614?text=${encodeURIComponent(message)}`;
-
-      // Buka langsung ke WhatsApp di tab/aplikasi baru
       window.open(waUrl, "_blank");
     });
   }
 
   // ==========================================
-  // 4. KONTROL MODAL PRICELIST
+  // 4. KONTROL MODAL PRICELIST & PROMO
   // ==========================================
-  const openBtn = document.getElementById("openPricelistBtn");
-  const closeBtn = document.getElementById("closePricelistBtn");
-  const modal = document.getElementById("pricelistModal");
+  
+  // Fungsi Helper Modal
+  function setupModal(openBtnId, closeBtnId, modalId) {
+    const openBtn = document.getElementById(openBtnId);
+    const closeBtn = document.getElementById(closeBtnId);
+    const modal = document.getElementById(modalId);
 
-  if (openBtn && modal) {
-    openBtn.addEventListener("click", function () {
-      modal.style.display = "flex";
-      document.body.style.overflow = "hidden"; // Kunci scroll halaman belakang
-    });
-  }
-
-  if (closeBtn && modal) {
-    closeBtn.addEventListener("click", function () {
-      modal.style.display = "none";
-      document.body.style.overflow = "auto";
-    });
-  }
-
-  window.addEventListener("click", function (event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
-      document.body.style.overflow = "auto";
+    if (openBtn && modal) {
+      openBtn.addEventListener("click", function () {
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden"; // Kunci scroll halaman utama
+      });
     }
-  });
+
+    if (closeBtn && modal) {
+      closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      });
+    }
+
+    window.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    });
+  }
+
+  // Setup Modal Pricelist
+  setupModal("openPricelistBtn", "closePricelistBtn", "pricelistModal");
+
+  // Setup Modal Promo
+  setupModal("openPromoBtn", "closePromoBtn", "promoModal");
 });

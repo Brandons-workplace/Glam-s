@@ -19,7 +19,7 @@
     <!-- LOGO & BRAND HEADER -->
     <div class="brand-header">
       <div class="logo-wrapper">
-        <img src="Glam's Pricelist/IMG_0326.jpeg" alt="Glam's Beauty Salon Logo" class="brand-logo-img">
+        <img src="Glam's Pricelist/IMG_9200.jpeg" alt="Glam's Beauty Salon Logo" class="brand-logo-img">
       </div>
       <h1 class="brand-title">GLAM'S</h1>
       <p class="brand-sub">BEAUTY SALON & ACADEMY</p>
@@ -30,9 +30,17 @@
 
     <!-- LINK BUTTONS -->
     <div class="links-wrapper">
+      <!-- Tombol Pricelist -->
       <button id="openPricelistBtn" class="link-card">
         <i class="fa-solid fa-list-check left-icon"></i>
-        <span class="link-text">Pricelist & Promo Treatments</span>
+        <span class="link-text">Pricelist Treatments</span>
+        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+      </button>
+
+      <!-- Tombol Promo (Terpisah) -->
+      <button id="openPromoBtn" class="link-card">
+        <i class="fa-solid fa-tags left-icon"></i>
+        <span class="link-text">Promo Treatments</span>
         <i class="fa-solid fa-chevron-right arrow-icon"></i>
       </button>
 
@@ -82,7 +90,7 @@
     </div>
   </div>
 
-  <!-- MODAL PRICELIST (SCROLL VERTIKAL) -->
+  <!-- MODAL PRICELIST -->
   <div id="pricelistModal" class="modal-overlay">
     <div class="modal-content modal-scroll-content">
       <span id="closePricelistBtn" class="close-btn">&times;</span>
@@ -92,21 +100,37 @@
         <p class="scroll-hint"><i class="fa-solid fa-arrow-down-short-wide"></i> Scroll ke bawah untuk melihat semua menu</p>
       </div>
 
-      <!-- CONTAINER GAMBAR SCROLL VERTIKAL -->
       <div class="pricelist-scroll-container">
-        <img src="Glam's Pricelist/IMG_3088.png" alt="Pricelist 1" class="pricelist-img">
-        <img src="Glam's Pricelist/IMG_3059.png" alt="Pricelist 2" class="pricelist-img">
-        <img src="Glam's Pricelist/IMG_3053.png" alt="Pricelist 3" class="pricelist-img">
-        <img src="Glam's Pricelist/IMG_3052.png" alt="Pricelist 4" class="pricelist-img">
-        <img src="Glam's Pricelist/IMG_3051.png" alt="Pricelist 5" class="pricelist-img">
-        <img src="Glam's Pricelist/25321930-f60c-4cd4-b241-7703aa34e877.jpeg" alt="Pricelist 6" class="pricelist-img">
-        <img src="Glam's Pricelist/94910c4e-6886-4f60-a5c5-562ec109d9ee.jpeg" alt="Pricelist 7" class="pricelist-img">
-        <img src="Glam's Pricelist/4c6d526a-7e9f-4ce5-a1a0-af6b2faa866a.jpeg" alt="Pricelist 8" class="pricelist-img">
-        <img src="Glam's Pricelist/48f4a2ba-af3e-45ba-a3d1-fe06ad1d7ad6.jpeg" alt="Pricelist 9" class="pricelist-img">
-        <img src="Glam's Pricelist/640c97a7-d852-4ed4-a3cb-f194ed668b1f.jpeg" alt="Pricelist 10" class="pricelist-img">
-        <img src="Glam's Pricelist/IMG_3089.png" alt="Pricelist 11" class="pricelist-img">
-        <img src="Glam's Pricelist/65d41f3f-1634-4254-b62e-fb973fe74487.jpeg" alt="Pricelist 12" class="pricelist-img">
-        <img src="Glam's Pricelist/0c9facea-3165-4a3e-8467-3db7fc6aedc7.jpeg" alt="Pricelist 13" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Pricelist_1.png" alt="Pricelist 1" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Pricelist_2.png" alt="Pricelist 2" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Pricelist_3.png" alt="Pricelist 3" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Pricelist_4.png" alt="Pricelist 4" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Pricelist_5.png" alt="Pricelist 5" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Pricelist_6.jpeg" alt="Pricelist 6" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Pricelist_7.jpeg" alt="Pricelist 7" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Pricelist_8.png" alt="Pricelist 8" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Pricelist_9.jpeg" alt="Pricelist 9" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Pricelist_10.jpeg" alt="Pricelist 10" class="pricelist-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PROMO (BARU & TERPISAH) -->
+  <div id="promoModal" class="modal-overlay">
+    <div class="modal-content modal-scroll-content">
+      <span id="closePromoBtn" class="close-btn">&times;</span>
+
+      <div class="modal-header">
+        <h3>Promo Glam's Beauty Salon</h3>
+        <p class="scroll-hint"><i class="fa-solid fa-arrow-down-short-wide"></i> Scroll ke bawah untuk melihat semua promo</p>
+      </div>
+
+      <!-- Silakan sesuaikan path gambar promo jika berbeda -->
+      <div class="pricelist-scroll-container">
+        <img src="Glam's Pricelist/IMG_Promo_1.jpeg" alt="Promo 1" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Promo_2.jpeg" alt="Promo 2" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Pricelist_8.png" alt="Promo 3" class="pricelist-img">
+        <img src="Glam's Pricelist/IMG_Promo_4.jpeg" alt="Promo 3" class="pricelist-img">
       </div>
     </div>
   </div>
