@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // ==========================================
   // 1. PENGATURAN JAM OPERASIONAL
   // ==========================================
-  const openingHour = 9;  // Jam buka (09:00)
-  const closingHour = 18; // Jam tutup (18:00)
+  const openingHour = 10;  // Jam buka (10:00)
+  const closingHour = 19; // Jam tutup (19:00)
 
   // ==========================================
   // 2. CEK STATUS BUKA / TUTUP SALON
@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
   if (statusBadge) {
     const currentHour = new Date().getHours();
     if (currentHour >= openingHour && currentHour < closingHour) {
-      statusBadge.textContent = "• Buka Sekarang (09.00 - 18.00 WIB)";
+      statusBadge.textContent = "• Buka Sekarang (10.00 - 19.00 WIB)";
       statusBadge.classList.add("open");
     } else {
-      statusBadge.textContent = "• Tutup Sekarang (Buka 09.00 - 18.00 WIB)";
+      statusBadge.textContent = "• Tutup Sekarang (Buka 10.00 - 19.00 WIB)";
       statusBadge.classList.add("closed");
     }
   }
